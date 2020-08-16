@@ -300,7 +300,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #18bfef !important;
+			color: #B2C9D9 !important;
 		}
 
 	strong, b {
@@ -2906,7 +2906,7 @@ input, select, textarea {
 /* Section/Article */
 
 	section.special, article.special {
-		text-align: center;
+		text-align: justify;
 	}
 
 	header {
@@ -2922,7 +2922,9 @@ input, select, textarea {
 		}
 
 		header > p {
-			font-style: italic;
+			text-align: justify;
+			text-justify: auto;
+			color: #E58C70;
 		}
 
 		header > h1 + p {
@@ -2934,6 +2936,7 @@ input, select, textarea {
 		header > h2 + p {
 			font-size: 1rem;
 			margin-top: -0.75rem;
+			color: #7DA3C5;
 		}
 
 		header > h3 + p {
@@ -2955,9 +2958,14 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
+			header.major > h2 {
+				color: #E58C70;
+			}
+
 			header.major > p {
 				margin-top: 0;
-				text-align: center;
+				text-align: justify;
+				color: #7DA3C5;
 			}
 
 			header.major > .date {
@@ -3199,14 +3207,14 @@ input, select, textarea {
 	}
 
 		.pagination a:hover {
-			color: #18bfef !important;
-			border-color: #18bfef;
+			color: #B2C9D9 !important;
+			border-color: #B2C9D9;
 			z-index: 1;
 		}
 
 			.pagination a:hover + a,
 			.pagination a:hover + span {
-				border-left-color: #18bfef;
+				border-left-color: #B2C9D9;
 			}
 
 		.pagination a.active {
@@ -3365,8 +3373,8 @@ input, select, textarea {
 			#intro input[type="button"]:hover,
 			#intro button:hover,
 			#intro .button:hover {
-				box-shadow: inset 0 0 0 2px #18bfef;
-				color: #18bfef !important;
+				box-shadow: inset 0 0 0 2px #B2C9D9;
+				color: #B2C9D9 !important;
 			}
 
 			#intro input[type="submit"].primary,
@@ -3384,7 +3392,7 @@ input, select, textarea {
 				#intro input[type="button"].primary:hover,
 				#intro button.primary:hover,
 				#intro .button.primary:hover {
-					background-color: #18bfef;
+					background-color: #B2C9D9;
 				}
 
 		#intro h1 {
@@ -3631,11 +3639,11 @@ input, select, textarea {
 	}
 
 		#nav ul.divided li {
-			border-top-color: #ffffff;
+			border-top-color: #EBEDF0;
 		}
 
 		#nav ul.icons li a.icon:hover:before {
-			color: #18bfef;
+			color: #B2C9D9;
 		}
 
 		#nav ul.icons.alt li .icon:before {
@@ -3643,7 +3651,7 @@ input, select, textarea {
 		}
 
 		#nav ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
+			box-shadow: inset 0 0 0 2px #B2C9D9;
 		}
 
 		#nav input, #nav select, #nav textarea {
@@ -3725,7 +3733,7 @@ input, select, textarea {
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: #EBEDF0;
 				}
 
 					#nav ul.links li.active a {
@@ -3733,7 +3741,7 @@ input, select, textarea {
 					}
 
 						#nav ul.links li.active a:hover {
-							color: #18bfef !important;
+							color: #B2C9D9 !important;
 						}
 
 		#nav ul.icons {
@@ -3759,7 +3767,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #EBEDF0;
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -3769,7 +3777,7 @@ input, select, textarea {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			border-top: solid 2px #d7dade;
 			margin: 0;
 		}
 
@@ -4189,7 +4197,7 @@ input, select, textarea {
 		}
 
 		#footer > section {
-			-moz-flex-basis: 50%;
+			-moz-flex-basis: 60%;
 			-webkit-flex-basis: 50%;
 			-ms-flex-basis: 50%;
 			flex-basis: 50%;
@@ -4218,11 +4226,11 @@ input, select, textarea {
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
 				flex-direction: column;
-				padding: 0;
+				padding: 20px;
 			}
 
 				#footer > section.split > section {
-					padding: 3rem 4rem 1rem 4rem ;
+					padding: 4rem 5rem 2rem 5rem ;
 					border-top: solid 2px #e2e2e2;
 				}
 
@@ -4244,7 +4252,7 @@ input, select, textarea {
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
-					padding: 3.15rem 4rem;
+					padding: 6.15rem 6rem;
 				}
 
 					#footer > section.split.contact > section > * {
@@ -4275,7 +4283,7 @@ input, select, textarea {
 					}
 
 					#footer > section.split.contact > section:first-child {
-						padding: 4rem 4rem 3rem 4rem;
+						padding: 6rem 4rem 3rem 4rem;
 					}
 
 					#footer > section.split.contact > section:last-child {
@@ -4291,6 +4299,7 @@ input, select, textarea {
 
 						#footer > section.split.contact > section.alt > :last-child {
 							margin-top: -0.325rem;
+							margin-left: 60px;
 						}
 
 		#footer form label,
