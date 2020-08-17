@@ -33,6 +33,10 @@ body {
 	line-height: 1;
 }
 
+.logoImage {
+	width: auto;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -150,7 +154,6 @@ input, select, textarea {
 	body, input, select, textarea {
 		/* font-family: "Merriweather", Georgia, serif; */
 		font-family: 'Open Sans', sans-serif;
-		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
 	}
@@ -182,9 +185,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
 		font-family: 'Open Sans', sans-serif;
-		font-weight: 900;
+		/* font-weight: 900; */
 		line-height: 1.5;
 		letter-spacing: 0.075em;
 		/* text-transform: uppercase; */
@@ -2315,7 +2317,7 @@ input, select, textarea {
 
 	label {
 		display: block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
@@ -2637,7 +2639,16 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 4rem 0;
-			width: 100%;
+			width: 50%;
+		}
+
+		.image.design.main {
+			display: block;
+			margin: 4rem 0;
+			width: 80%;
+			align-items: center;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 			.image.main:first-child {
@@ -2936,6 +2947,7 @@ input, select, textarea {
 		header > h2 + p {
 			font-size: 1rem;
 			margin-top: -0.75rem;
+			margin-bottom: -0.75rem;
 			color: #7DA3C5;
 		}
 
@@ -2959,13 +2971,13 @@ input, select, textarea {
 			}
 
 			header.major > h2 {
-				color: #E58C70;
+				color: #7DA3C5;
 			}
 
 			header.major > p {
 				margin-top: 0;
 				text-align: justify;
-				color: #7DA3C5;
+				color: #242933;
 			}
 
 			header.major > .date {
@@ -3543,7 +3555,7 @@ input, select, textarea {
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #B2C9D9 !important;
 			}
 
 		#header strong, #header b {
@@ -3579,7 +3591,7 @@ input, select, textarea {
 			/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
 			font-family: 'Open Sans', sans-serif;
 			font-size: 2.25rem;
-			font-weight: 900;
+			/* font-weight: 900; */
 			letter-spacing: 0.075em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
@@ -3588,8 +3600,8 @@ input, select, textarea {
 		}
 
 			#header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
+				border-color: #B2C9D9 !important;
+				color: #B2C9D9 !important;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3665,7 +3677,7 @@ input, select, textarea {
 
 			#nav a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #B2C9D9 !important;
 			}
 
 		#nav strong, #nav b {
@@ -3737,7 +3749,7 @@ input, select, textarea {
 				}
 
 					#nav ul.links li.active a {
-						color: #1e252d;
+						color: #E58C70;
 					}
 
 						#nav ul.links li.active a:hover {
@@ -4169,32 +4181,7 @@ input, select, textarea {
 			border-color: #e2e2e2;
 		}
 
-		#footer .pagination a, #footer .pagination span {
-			border-color: #e2e2e2;
-		}
-
-		#footer .pagination a {
-			color: #717981 !important;
-		}
-
-			#footer .pagination a:hover {
-				color: #18bfef !important;
-				border-color: #18bfef;
-				z-index: 1;
-			}
-
-				#footer .pagination a:hover + a,
-				#footer .pagination a:hover + span {
-					border-left-color: #18bfef;
-				}
-
-			#footer .pagination a.active {
-				background-color: #e2e2e2;
-			}
-
-		#footer .pagination span {
-			color: #e2e2e2;
-		}
+	
 
 		#footer > section {
 			-moz-flex-basis: 60%;
@@ -4230,7 +4217,7 @@ input, select, textarea {
 			}
 
 				#footer > section.split > section {
-					padding: 4rem 5rem 2rem 5rem ;
+					padding: 0rem 2rem 2rem 2rem ;
 					border-top: solid 2px #e2e2e2;
 				}
 
