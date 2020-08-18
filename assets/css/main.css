@@ -34,7 +34,17 @@ body {
 }
 
 .logoImage {
-	width: auto;
+	width: 50%;
+}
+
+.inspiration {
+	text-align: center;
+	align-items: center;
+	width: 100%;
+}
+
+.image.fit {
+	width: 50%;
 }
 
 ol, ul {
@@ -310,7 +320,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: #242933;
 	}
 
 	blockquote {
@@ -2624,8 +2634,11 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
-			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			/* margin: 2.5rem 0; */
+			width: 50%;
+			align-items: center;
 		}
 
 			.image.fit:first-child {
@@ -2651,11 +2664,24 @@ input, select, textarea {
 			margin-right: auto;
 		}
 
+		.second.image.design {
+			display: block;
+			margin: 2rem 0;
+			width:30%;
+			align-items: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 			.image.main:first-child {
 				margin-top: 0;
 			}
 
 			.image.main img {
+				width: 100%;
+			}
+
+			.second.image.design img {
 				width: 100%;
 			}
 
@@ -3588,10 +3614,8 @@ input, select, textarea {
 			border-style: solid;
 			border-color: #ffffff;
 			border-width: 5px !important;
-			/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
 			font-family: 'Open Sans', sans-serif;
 			font-size: 2.25rem;
-			/* font-weight: 900; */
 			letter-spacing: 0.075em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
